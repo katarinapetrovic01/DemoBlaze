@@ -8,6 +8,7 @@ public class BaseTest {
 
     public ChromeDriver openBrowser()
     {
+        ChromeDriver driver = new ChromeDriver();
 
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
